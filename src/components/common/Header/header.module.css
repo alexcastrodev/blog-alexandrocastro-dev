@@ -1,0 +1,10 @@
+.header {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--blog-background);
+}
