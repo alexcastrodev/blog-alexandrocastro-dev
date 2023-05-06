@@ -54,15 +54,15 @@ console.log(currentArray); // [5,20,60,120,200,300]
 Só que existe métodos mais limpos e nativos de fazer isso. Sabe como? Vou mostrar o poder do From:
 
 ```javascript
-const originalArray = [10, 20, 30, 40, 50, 60]
-, function multiplyValues (value: number, multiple = 10) {
-return value * multiple
+const originalArray = [10, 20, 30, 40, 50, 60];
+function multiplyValues(value: number, multiple = 10) {
+  return value * multiple;
 }
-const currentArray = Array. from(originalArray, multiplyValues)
-currentArray[0] = 5
+const currentArray = Array.from(originalArray, multiplyValues);
+currentArray[0] = 5;
 
-console.log(originalArray) // [10, 20, 30, 40, 50, 60]
-console.log(currentArray) // [5,20,60,120,200,300]
+console.log(originalArray); // [10, 20, 30, 40, 50, 60]
+console.log(currentArray); // [5,20,60,120,200,300]
 ```
 
 Bem melhor não ? Desestruração é muito bom, mas precisamos usar com moderação.
