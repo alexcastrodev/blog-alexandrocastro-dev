@@ -1,4 +1,5 @@
 .articles {
   display: flex;
   height: calc(100vh - 140px);
+  flex-direction: column;
 }

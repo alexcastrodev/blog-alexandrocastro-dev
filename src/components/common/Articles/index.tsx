@@ -3,8 +3,8 @@ import styles from "./articles.module.css";
 
 export default component$(() => {
   return (
-    <div class={styles.articles}>
+    <section class={styles.articles}>
       <Slot />
-    </div>
+    </section>
   );
 });
