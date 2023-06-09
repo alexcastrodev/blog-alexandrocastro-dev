@@ -1,5 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import type { StaticGenerateHandler } from "@builder.io/qwik-city";
+import type {
+  DocumentHead,
+  StaticGenerateHandler,
+} from "@builder.io/qwik-city";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import getPost from "@alexcastrodev/core/src/services/get-post";
 
@@ -15,6 +18,56 @@ export const usePosts = routeLoader$(async ({ params, redirect }) => {
   }
   return posts;
 });
+
+// export const head: DocumentHead = {
+//   // This will used to resolve the <title> of the page
+//   title: "About page",
+//   meta: [
+//     {
+//       name: "description",
+//       content: "This is the about page",
+//     },
+//     {
+//       property: "og:title",
+//       content: "About page",
+//     },
+//     {
+//       property: "og:description",
+//       content: "This is the about page",
+//     },
+//   ],
+//   link: [
+//     {
+//       rel: "canonical",
+//       href: "https://example.com/about",
+//     },
+//   ],
+// };
+
+export const head: DocumentHead = ({ resolveValue, params }) => {
+  const post = resolveValue(usePosts);
+  return {
+    title: post.title,
+    meta: [
+      {
+        name: "description",
+        content: post.paragraph.slice(0, 100),
+      },
+      {
+        name: "id",
+        content: params.id,
+      },
+      {
+        property: "og:title",
+        content: post.title,
+      },
+      {
+        property: "og:description",
+        content: post.title,
+      },
+    ],
+  };
+};
 
 export default component$(() => {
   const post = usePosts();
