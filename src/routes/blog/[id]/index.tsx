@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import type { StaticGenerateHandler } from "@builder.io/qwik-city";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import getPost from "@alexcastrodev/core/src/services/get-post";
 
@@ -19,3 +20,13 @@ export default component$(() => {
   const post = usePosts();
   return <div dangerouslySetInnerHTML={post.value?.paragraph}></div>;
 });
+
+export const onStaticGenerate: StaticGenerateHandler = async () => {
+  const ids = ["code-spliting-com-nextjs-2"];
+
+  return {
+    params: ids.map((id) => {
+      return { id };
+    }),
+  };
+};

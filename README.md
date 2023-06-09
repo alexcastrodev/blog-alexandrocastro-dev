@@ -5,5 +5,11 @@ Testing this guy called qwik
 ## Static Site Generator (Node.js)
 
 ```
-npm run build.server
+yarn build.server
+```
+
+## Static Site Generator (Node.js)
+
+```
+yarn build.server
 ```
