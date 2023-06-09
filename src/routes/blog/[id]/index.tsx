@@ -5,6 +5,7 @@ import type {
 } from "@builder.io/qwik-city";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import getPost from "@alexcastrodev/core/src/services/get-post";
+import getFirstImageSource from "@alexcastrodev/core/src/utils/get-og-image";
 
 export const usePosts = routeLoader$(async ({ params, redirect }) => {
   const id = Number((params.id as string).split("-").at(-1));
@@ -18,31 +19,6 @@ export const usePosts = routeLoader$(async ({ params, redirect }) => {
   }
   return posts;
 });
-
-// export const head: DocumentHead = {
-//   // This will used to resolve the <title> of the page
-//   title: "About page",
-//   meta: [
-//     {
-//       name: "description",
-//       content: "This is the about page",
-//     },
-//     {
-//       property: "og:title",
-//       content: "About page",
-//     },
-//     {
-//       property: "og:description",
-//       content: "This is the about page",
-//     },
-//   ],
-//   link: [
-//     {
-//       rel: "canonical",
-//       href: "https://example.com/about",
-//     },
-//   ],
-// };
 
 export const head: DocumentHead = ({ resolveValue, params }) => {
   const post = resolveValue(usePosts);
@@ -64,6 +40,10 @@ export const head: DocumentHead = ({ resolveValue, params }) => {
       {
         property: "og:description",
         content: post.title,
+      },
+      {
+        property: "og:image",
+        content: getFirstImageSource(post.paragraph) || "",
       },
     ],
   };
