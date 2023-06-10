@@ -62,6 +62,9 @@ body {
   line-height: inherit;
 }
 
+pre {
+  overflow-x: auto;
+}
 .language-javascript {
   font-family: Consolas, monospace;
   font-size: 14px;
