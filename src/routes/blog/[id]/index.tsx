@@ -55,7 +55,10 @@ export default component$(() => {
 });
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
-  const ids = ["code-spliting-com-nextjs-2"];
+  const ids = [
+    "code-spliting-com-nextjs-2",
+    "styled-components-under-the-hood-5",
+  ];
 
   return {
     params: ids.map((id) => {
