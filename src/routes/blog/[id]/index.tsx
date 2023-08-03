@@ -58,6 +58,7 @@ export const onStaticGenerate: StaticGenerateHandler = async () => {
   const ids = [
     "code-spliting-com-nextjs-2",
     "styled-components-under-the-hood-5",
+    "react-immutable-state-and-avoiding-rerenders-on-map-6",
   ];
 
   return {

@@ -17,7 +17,7 @@ export default component$(() => {
         <Post
           key={post.url}
           title={post.title}
-          description="Resolvendo o problema de bundle grande com NextJS"
+          description={`${post.paragraph.slice(0, 100)}...`}
           url={`/blog/${post.url}`}
         />
       ))}
