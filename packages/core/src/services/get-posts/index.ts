@@ -9,7 +9,7 @@ export default async function getPosts(): Promise<Post[]> {
   const query = `
     query($owner: String!, $repo: String!, $cursor: String) {
       repository(owner: $owner, name: $repo) {
-        issues(first: 100, states: CLOSED, after: $cursor) {
+        issues(first: 100, states: CLOSED, labels: ["NextJS"], after: $cursor) {
           pageInfo {
             endCursor
             hasNextPage
