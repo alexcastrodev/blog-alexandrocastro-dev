@@ -19,6 +19,13 @@ export default async function getPosts(): Promise<Post[]> {
               number
               title
               bodyHTML
+              labels(first: 10) {
+                edges {
+                  node {
+                    name
+                  }
+                }
+              }
             }
           }
         }
@@ -45,12 +52,15 @@ export default async function getPosts(): Promise<Post[]> {
     if (response.ok) {
       const { pageInfo, edges } = data.data.repository.issues;
       const formattedEdges = edges.map((edge: any) => {
-        const { title, bodyHTML, number } = edge.node;
+        const { title, bodyHTML, number, labels: tags } = edge.node;
+        const labels = tags?.edges?.map(
+          (label: any) => label?.node?.name || ""
+        );
 
         const paragraph = getSummary(bodyHTML) || "";
         const url =
           (title || "").toLowerCase().replaceAll(" ", "-") + "-" + number;
-        return { title, paragraph, url };
+        return { title, paragraph, url, labels };
       });
       issues.push(...formattedEdges);
       cursor = pageInfo.hasNextPage ? pageInfo.endCursor : null;

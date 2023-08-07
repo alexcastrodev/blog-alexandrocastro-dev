@@ -6,13 +6,27 @@ interface PostProps {
   title: string;
   description: string;
   url: string;
+  tags?: string[];
 }
 
-export default component$<PostProps>(({ title, description, url }) => {
-  return (
-    <Link class={styles.section} href={url}>
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </Link>
-  );
-});
+export default component$<PostProps>(
+  ({ title, description, url, tags = [] }) => {
+    return (
+      <article class={styles.section}>
+        <Link href={url}>
+          <h3 class={styles.description}>{title}</h3>
+          <p class={styles.description}>{description}</p>
+        </Link>
+        {tags.length > 0 && (
+          <div class={styles.footer}>
+            {tags.map((tag) => (
+              <span key={tag} class={styles.tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+      </article>
+    );
+  }
+);

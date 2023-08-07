@@ -3,4 +3,5 @@ export interface Post {
   title: string;
   paragraph: string;
   url?: string;
+  labels: string[];
 }

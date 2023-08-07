@@ -38,6 +38,7 @@ export default async function getPost(issueId: number): Promise<Post | null> {
         id: number,
         title,
         paragraph: bodyHTML,
+        labels: [],
       };
     }
     return null;

@@ -2,8 +2,8 @@ import { component$, Slot, useStyles$ } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 
 import styles from "./styles.css?inline";
+import markedown from "../assets/markdown-light.css?inline";
 import Header from "~/components/common/Header";
-import Footer from "~/components/common/Footer";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   cacheControl({
@@ -16,13 +16,13 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 
 export default component$(() => {
   useStyles$(styles);
+  useStyles$(markedown);
   return (
     <>
       <Header />
       <main>
         <Slot />
       </main>
-      <Footer />
     </>
   );
 });

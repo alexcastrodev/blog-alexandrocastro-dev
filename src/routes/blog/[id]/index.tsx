@@ -6,6 +6,7 @@ import type {
 import { routeLoader$ } from "@builder.io/qwik-city";
 import getPost from "@alexcastrodev/core/src/services/get-post";
 import getFirstImageSource from "@alexcastrodev/core/src/utils/get-og-image";
+import Page from "~/components/common/Page";
 
 export const usePosts = routeLoader$(async ({ params, redirect }) => {
   const id = Number((params.id as string).split("-").at(-1));
@@ -51,7 +52,13 @@ export const head: DocumentHead = ({ resolveValue, params }) => {
 
 export default component$(() => {
   const post = usePosts();
-  return <div dangerouslySetInnerHTML={post.value?.paragraph}></div>;
+  return (
+    <Page>
+      <article class="markdown-body">
+        <div dangerouslySetInnerHTML={post.value?.paragraph} />
+      </article>
+    </Page>
+  );
 });
 
 export const onStaticGenerate: StaticGenerateHandler = async () => {
