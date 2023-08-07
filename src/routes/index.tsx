@@ -9,9 +9,12 @@ import Latest from "~/components/common/Latest";
 import Feed from "~/components/common/Feed";
 
 export const usePosts = routeLoader$(async () => {
-  const posts = getAllPosts();
-  const recentLinks = getRecentLinks();
-  await Promise.all([posts, recentLinks]);
+  const postsRequest = getAllPosts();
+  const recentLinksRequest = getRecentLinks();
+  const [posts, recentLinks] = await Promise.all([
+    postsRequest,
+    recentLinksRequest,
+  ]);
   return { posts, recentLinks };
 });
 
