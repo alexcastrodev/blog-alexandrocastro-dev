@@ -34,7 +34,7 @@ export default component$(() => {
           />
         ))}
       </Articles>
-      <Latest data={value?.recentLinks || []} />
+      <Latest />
     </Feed>
   );
 });

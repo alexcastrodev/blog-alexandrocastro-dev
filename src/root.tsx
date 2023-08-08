@@ -21,6 +21,7 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
+        <script async src="https://platform.twitter.com/widgets.js"></script>
         <RouterHead />
       </head>
       <body lang="en">
