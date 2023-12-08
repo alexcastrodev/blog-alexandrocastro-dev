@@ -1,8 +1,0 @@
-.articles {
-  display: flex;
-  height: calc(100vh - 140px);
-  flex-direction: column;
-  max-width: var(--paper-size);
-  margin: 0 auto;
-  row-gap: 16px;
-}
