@@ -102,7 +102,7 @@ Não tem uma conclusão, Conhecer arquiteturas não é o mal.
 
 Os pontos foram focados em eficiência na entrega de valor.
 
-<img src="https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/75f0c198-556f-451b-a2e4-afed9b824b8d">
+![image](https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/75f0c198-556f-451b-a2e4-afed9b824b8d)
 
 # Referências
 
