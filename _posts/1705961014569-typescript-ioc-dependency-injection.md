@@ -12,9 +12,6 @@ ogImage:
 
 Como usar e pra que serve ?
 
-
-![image](https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/a4f8f585-8374-45f9-af3b-211c931aeb20)
-
 Há pouco tentei procurar um conteúdo sobre isso, mas não encontrei, então vou disponibilizar o conteúdo em texto e vídeo.
 
 Flecto Educa é uma iniciativa entre os desenvolvedores da Flecto (https://flecto.io), onde compartilhamos conhecimento internamente, e decidi deixar esse conteúdo publico.
@@ -71,7 +68,8 @@ Teorias é ok, mas como já sabem…
 
 ![image](https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/b581b8c3-b869-4e4b-95f9-fc2888318b47)
 
-::youtube[AlexCastroDev - Typescript — IOC vs Dependency Injection]{#sbv5M0tK_V0&t=137s}
+
+[![Typescript — IOC vs Dependency Injection](https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/bb9e045d-fd92-4845-b243-96337d929267)](https://www.youtube.com/watch?v=sbv5M0tK_V0&t=137s "Typescript — IOC vs Dependency Injection")
 
 
 # References
