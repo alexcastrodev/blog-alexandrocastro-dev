@@ -2,7 +2,7 @@
 title: 'Typescript — IOC vs Dependency Injection'
 excerpt: 'Quando você conhece o termo convention over configuration, você entende o que é produtividade.'
 coverImage: 'https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/a4f8f585-8374-45f9-af3b-211c931aeb20'
-date: '2024-01-21T09:00:00.322Z'
+date: '2024-01-22T22:00:00.322Z'
 author:
   name: Alexandro castro
   picture: 'https://github.com/alexcastrodev.png'
