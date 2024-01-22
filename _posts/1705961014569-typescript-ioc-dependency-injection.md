@@ -71,11 +71,7 @@ Teorias é ok, mas como já sabem…
 
 ![image](https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/b581b8c3-b869-4e4b-95f9-fc2888318b47)
 
-
-<video width="100%" controls>
-  <source src="https://www.youtube.com/watch?v=sbv5M0tK_V0&t=137s" type="video/mp4">
-</video>
-
+::youtube[AlexCastroDev - Typescript — IOC vs Dependency Injection]{#sbv5M0tK_V0&t=137s}
 
 
 # References
