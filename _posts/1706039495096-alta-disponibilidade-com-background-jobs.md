@@ -2,7 +2,7 @@
 title: 'Alta disponibilidade - Background Jobs'
 excerpt: 'Trabalhos em segundo plano são uma abordagem para terceirizar o trabalho. Um trabalho em segundo plano é uma tarefa a ser realizada posteriormente, fora do ciclo de resposta de solicitação.'
 coverImage: 'https://github.com/AlexcastroDev/blog-alexandrocastro-dev/assets/10711649/acd5ff3a-0a57-4e9b-b486-1971da7870ad'
-date: '2024-01-22T22:00:00.322Z'
+date: '2024-01-23T20:00:00.322Z'
 author:
   name: Alexandro castro
   picture: 'https://github.com/alexcastrodev.png'
