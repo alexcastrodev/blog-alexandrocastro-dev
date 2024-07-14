@@ -18,10 +18,22 @@ code {
 }
 
 a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
     color: purple;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: #bd93f9;
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
     text-decoration: underline;
 }
