@@ -1,13 +1,13 @@
 ---
 title: 'A importância da base sólida e decisão técnica'
 excerpt: 'Só porque você consegue arrancar um parafuso da parede com um alicate, não quer dizer que deveria, acha a porra da chave correta'
-coverImage: 'https://github.com/user-attachments/assets/533aea2a-b831-4d62-8916-dd47915ce91a'
+coverImage: 'https://github.com/user-attachments/assets/b9e5fb20-537a-4472-8d27-80630eea58d6'
 date: '2024-07-14T20:11:19.916Z'
 author:
   name: Alexandro castro
   picture: 'https://github.com/alexcastrodev.png'
 ogImage:
-  url: 'https://github.com/user-attachments/assets/533aea2a-b831-4d62-8916-dd47915ce91a'
+  url: 'https://github.com/user-attachments/assets/b9e5fb20-537a-4472-8d27-80630eea58d6'
 ---
 
 ## Introdução
