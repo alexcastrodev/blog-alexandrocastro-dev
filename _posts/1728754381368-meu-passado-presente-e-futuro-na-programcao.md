@@ -89,7 +89,7 @@ Sou grato ao CTO que me inspirou em vários aspectos, como flexibilidade, bondad
 
 Sou grato ao Lucas Testa, que não consigo definir como CTO, Backend, Head, já que teve todos esses chapéus, mas merece um destaque, por que alem de um ótimo amigo, foi outro impulso na carreira, na vida, com suas soft skills.
 
-Sou grato também ao CTO que hoje em dia, é mais que um chefe, mas é uma inspiração como pessoa, como pesquisador, como mentor, e que conseguiu dar o maior impulso de carreira que já tive. - João Loff.
+Sou grato também ao CTO que hoje em dia, é mais que um chefe, mas é uma inspiração como pessoa, como pesquisador, como mentor, e que conseguiu dar o maior impulso de carreira que já tive. - João Ferreira Loff.
 
 
 E por fim, mas não menos importante, a todos meus amigos que fiz durante esse percurso e aos que vão fazer. 
