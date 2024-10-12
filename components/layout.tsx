@@ -2,14 +2,14 @@ import Footer from './footer'
 import Meta from './meta'
 
 type Props = {
-  preview?: boolean
+  isHomepage?: boolean
   children: React.ReactNode
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, isHomepage = true }: Props) => {
   return (
     <>
-      <Meta />
+      <Meta isHomepage={isHomepage} />
       <div className="min-h-screen">
         <main>{children}</main>
       </div>

@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
-const Meta = () => {
+interface MetaProps {
+  isHomepage: boolean
+}
+
+const Meta = ({isHomepage}: MetaProps) => {
   return (
     <Head>
       <link
@@ -36,7 +40,8 @@ const Meta = () => {
         name="description"
         content="Alexandro Castro or Alexcastrodev talk about csharp, node.js, javascript, programming, dotnet"
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      { isHomepage && <meta property="og:image" content={HOME_OG_IMAGE_URL} /> }
+      
     </Head>
   )
 }
