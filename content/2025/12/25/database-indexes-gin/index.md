@@ -103,6 +103,22 @@ No Rails:
 
 ![changes](https://github.com/user-attachments/assets/33b9ef4e-33ae-4a4e-a927-96afa0a6b406)
 
+Para aproveitar o melhor da indexação, mudamos a estrutura que armazenamos para:
+
+```json
+{
+  "identities": [
+    {
+      "auth0_id": "auth0|1234",
+      "email": "user@example.com",
+      "isSocial": false,
+      "email_verified": true,
+      "connection": "Username-Password-Authentication"
+    }
+  ]
+}
+```
+
 Preparei uma DB com uma quantidade considerável de usuários ( 100 mil ), e o resultado:
 
 ```bash
