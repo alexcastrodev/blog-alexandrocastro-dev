@@ -1,13 +1,14 @@
 ---
 title: "Pequena otimização com índice GIN"
-date: '2025-12-25T19:53:00-03:00'
+date: '2025-12-25T00:00:00-03:00'
 slug: database-indexes-gin
 tags:
 - database
-- indexes
 - postgres
+- indexes
 draft: false
 ---
+
 
 # Introdução
 
