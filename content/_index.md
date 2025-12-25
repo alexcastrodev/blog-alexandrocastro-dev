@@ -2,6 +2,11 @@
 title: Alexandro Castro's Blog
 ---
 
+## 2025
+
+### Dezembro
+- [Pequena otimização com índice GIN]({{< relref "/2025/12/25/database-indexes-gin" >}})
+
 ## 2024
 
 ### Outubro
